@@ -14,4 +14,7 @@ const firebaseConfig = {
 // なければinitializeAppを実行
 !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();
 
+// firestore を使用するための初期設定
+export const db = firebase.firestore();
+
 export default firebase;
