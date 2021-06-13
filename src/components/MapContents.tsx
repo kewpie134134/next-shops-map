@@ -25,7 +25,7 @@ const positionIwamotocho = {
   lng: 139.7762
 };
 
-const Map = () => {
+const MapContents = () => {
   return (
     <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={17}>
@@ -44,4 +44,4 @@ const Map = () => {
   );
 };
 
-export default Map;
+export default MapContents;
