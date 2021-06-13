@@ -33,7 +33,9 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <Header />
-      <LoadScript googleMapsApiKey="AIzaSyB9ozf8pDBbJW9lBXlTkaMrT4c7YVv-lhw">
+      <LoadScript
+        googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
+      >
         <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={17}>
           <InfoWindow position={positionAkiba}>
             <div style={divStyle}>
